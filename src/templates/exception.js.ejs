@@ -1,0 +1,18 @@
+interface IInternalError{
+  error_code?: string
+  error_callback?: string
+  erro_var?: any;
+}
+export default class <%= props.name %>Exception {
+public readonly message: string;
+
+public readonly statusCode: number; //404, 500, 200...
+
+public readonly internalError: IInternalError;
+
+constructor(message: string, statusCode = 400, internalError = {}) {
+  this.message = message;
+  this.statusCode = statusCode;
+  this.internalError = internalError;
+}
+}

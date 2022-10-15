@@ -1,0 +1,11 @@
+import { Request, Response, NextFunction } from 'express'
+
+async function <%= props.name %>Middleware(
+  request:Request,
+  response:Response,
+  next: NextFunction
+):Promise<Response | NextFuncion | undefined>{
+  return;  
+}
+
+export default <%= props.name %>Middleware

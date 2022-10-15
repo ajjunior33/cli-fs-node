@@ -1,0 +1,11 @@
+import { Request, Response, NextFunction } from 'express'
+
+export default class <%= props.name %>Controller{
+  public async execute(request: Request, response: Response, next: NextFunction): Promise <Response | undefined | NextFunction> {
+    try{
+      return response.status(200).json({hello: "World"});
+    }catch(err){
+      next(err);
+    }
+  }
+}

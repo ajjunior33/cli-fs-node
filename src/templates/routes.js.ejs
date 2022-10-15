@@ -1,0 +1,11 @@
+import { Router } from 'express';
+
+const <%= props.name %>Router = Router();
+
+<%= props.name %>Router
+  .get("/", (request,response) => {
+    return response.status(200);
+  });
+
+
+export default <%= props.name %>Router
