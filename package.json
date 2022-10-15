@@ -1,8 +1,8 @@
 {
-  "name": "fs-node",
+  "name": "mk-fs-node",
   "version": "0.0.1",
   "description": "fs-node CLI",
-  "private": true,
+  "private": false,
   "bin": {
     "fs-node": "bin/fs-node"
   },

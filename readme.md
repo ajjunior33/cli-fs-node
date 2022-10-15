@@ -17,6 +17,10 @@ $ npm test
 
 $ npm publish
 ```
+# Tasks
+- [ ] Criar testes
+- [ ] Iniciar um projeto backend pelo CLI
+
 
 # License
 
